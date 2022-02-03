@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% block header %}
+	<base href="{{config["siteUrl"]}}">
+	<meta charset="UTF-8">
+	<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+	<title>proxmox-servers</title>
+{% endblock %}
+{% block css %}
+	{{ css('https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.css',{nonce: nonce}) }}
+	{{css('css/style.css', {nonce: nonce})}}
+{% endblock %}
+</head>
+<body>
+{% block head %}
+	<div class="ui container">
+{% endblock %}

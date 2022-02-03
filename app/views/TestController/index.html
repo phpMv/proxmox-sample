@@ -1,0 +1,29 @@
+<!--View associated to index action of TestController controller -->
+<div class="ui segment">
+    <form class="ui form" name="frm-server" id="frm-server" method="post" action="{{ path('test.show') }}">
+        <div class="two fields">
+            <div class="field">
+                <label>Server name</label>
+                <input placeholder="Server name" type="text" name="name" id="name" value="">
+            </div>
+            <div class="field">
+                <label>Login</label>
+                <input placeholder="Login" type="text" name="login">
+            </div>
+        </div>
+        <div class="two fields">
+            <div class="field">
+                <label>Ip address</label>
+                <input placeholder="0.0.0.0" type="text" name="ip" id="ip" value="">
+            </div>
+            <div class="field">
+                <label>Password</label>
+                <input placeholder="Password" type="password" name="password">
+            </div>
+        </div>
+        <div class="ui submit button">Connection</div>
+    </form>
+</div>
+<div class="ui segment" id="response">
+</div>
+{{ script_foot | raw }}

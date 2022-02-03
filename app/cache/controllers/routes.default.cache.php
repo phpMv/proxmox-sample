@@ -1,0 +1,2 @@
+<?php
+return array("/test/"=>["controller"=>"controllers\\TestController","action"=>"index","parameters"=>[],"name"=>"test.index","cache"=>false,"duration"=>0],"/test/show/"=>["controller"=>"controllers\\TestController","action"=>"show","parameters"=>[],"name"=>"test.show","cache"=>false,"duration"=>0],"/resolveIp/(.+?)/"=>["controller"=>"controllers\\TestController","action"=>"resolveIp","parameters"=>[0],"name"=>"test.resolveIp","cache"=>false,"duration"=>0]);
